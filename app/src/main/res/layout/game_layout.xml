@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redPic"
+        android:src="@drawable/red_square"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenPic"
+        android:src="@drawable/green_square"
+        android:layout_alignTop="@+id/redPic"
+        android:layout_toRightOf="@+id/redPic"
+        android:layout_toEndOf="@+id/redPic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yellowPic"
+        android:layout_below="@+id/redPic"
+        android:layout_toLeftOf="@+id/greenPic"
+        android:layout_toStartOf="@+id/greenPic"
+        android:src="@drawable/yellow_square" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluePic"
+        android:layout_alignBottom="@+id/yellowPic"
+        android:layout_alignRight="@+id/greenPic"
+        android:layout_alignEnd="@+id/greenPic"
+        android:src="@drawable/blue_square" />
+
+
+
+</RelativeLayout>
